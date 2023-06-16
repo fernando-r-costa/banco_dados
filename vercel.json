@@ -5,13 +5,13 @@
         "src": "server.js",
         "use": "@vercel/node",
         "config": {
-          "includeFiles": ["db_usuarios.json"]
+          "includeFiles": ["db.json"]
         }
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "./",
         "dest": "server.js"
       }
     ]
